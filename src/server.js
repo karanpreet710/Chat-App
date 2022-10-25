@@ -51,6 +51,6 @@ io.on('connection', (socket) => {
     })
 })
 
-server.listen(3333, () => {
+server.listen(PORT, () => {
     console.log(`Server started on http://localhost:${PORT}`)
 })
