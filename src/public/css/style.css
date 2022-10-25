@@ -1,0 +1,128 @@
+.parent {
+	width: 500px;
+	margin: 50px auto;
+	background-color: #7386ff;
+	border-radius: 5px;
+}
+
+#join {
+	width: 100%;
+	color: #667aff !important;
+	margin-top: 10px;
+}
+
+body {
+	background-color: #e6e9ff !important;
+}
+
+#heading {
+	background-color: #4b63fc;
+	padding: 10px;
+	color: white;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+#entry-form {
+	color: white;
+	padding: 20px 50px;
+}
+
+.chat-container {
+	width: 800px;
+	margin: 30px auto;
+	background-color: #fff;
+}
+
+.chat-header {
+	background-color: #4b63fc;
+	padding: 5px;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.chat-header a {
+	background-color: white;
+}
+
+#chat-sidebar {
+	background-color: #7386ff;
+	color: #fff;
+	padding: 20px 20px 60px;
+	overflow-y: scroll;
+}
+
+#chat-sidebar h2 {
+	font-size: 20px;
+	background: rgba(0, 0, 0, 0.1);
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+#chat-sidebar h3 {
+	margin-bottom: 15px;
+}
+
+#chat-sidebar ul {
+	list-style-type: none;
+	padding-left: 2px;
+}
+
+#chat-sidebar ul li {
+	padding: 5px 0;
+}
+
+#chat-messages {
+	padding: 30px;
+	max-height: 400px;
+	overflow-y: scroll;
+}
+
+#chat-messages .message {
+	padding: 10px;
+	margin-bottom: 15px;
+	background-color: #e6e9ff;
+	border-radius: 5px;
+}
+
+#chat-messages .message .meta {
+	font-size: 15px;
+	font-weight: bold;
+	color: #7386ff;
+	margin-bottom: 7px;
+}
+
+#chat-messages .message .meta span {
+	color: grey;
+	opacity: 0.6;
+}
+
+.chat-form-container {
+	padding: 10px 20px;
+	background-color: #667aff;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.chat-form-container form {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.chat-form-container input[type='text'] {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	flex: 1;
+	border-radius: 0px;
+}
+
+.chat-form-container form button {
+	border-radius: 0px;
+	height: 40px;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script defer src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="./js/script.js"></script>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="text-center" id="heading">
+            <h1>Chat App <i class="bi bi-chat-fill"></i></h1>
+        </div>
+        <div id="entry-form">
+            <div>
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Enter username"
+                        required>
+                </div>
+                <div class="mb-3">
+                    <label for="room">Room</label>
+                    <select class="form-select" id="room" name="room">
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="Python">Python</option>
+                        <option value="PHP">PHP</option>
+                        <option value="C#">C#</option>
+                        <option value="Ruby">Ruby</option>
+                        <option value="Java">Java</option>
+                    </select>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-light" id="join">Join in!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>Chat App <i class="bi bi-chat-fill"></i></h1>
+            <a href="index.html" class="btn">Leave Room</a>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4" id="chat-sidebar">
+                    <h3><i class="bi bi-chat-square-text-fill"></i> Room Name:</h3>
+                    <h2 id="room-name"></h2>
+                    <h3><i class="bi bi-people-fill"></i> Users</h3>
+                    <ul id="users">
+                        <!-- <li>Karan</li>
+                        <li>Vyom</li>
+                        <li>Harshit</li> -->
+                    </ul>
+                </div>
+                <div class="col-8" id="chat-messages">
+                    <!-- <div class="message">
+                        <p class="meta">Karan <span>2:47 pm</span></p>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nobis aliquam delectus libero
+                            saepe ut, reiciendis ratione neque eos quia dolor? Nemo odit aliquid deleniti vero debitis.
+                            Quidem, excepturi quia.
+                        </p>
+                    </div>
+                    <div class="message">
+                        <p class="meta">Vyom <span>2:48 pm</span></p>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos fugit dolore modi
+                            doloremque asperiores. Temporibus nam, cumque repudiandae, eum, dicta praesentium consectetur
+                            nobis iste dolores natus sit eaque excepturi eligendi!
+                        </p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="chat-form-container">
+            <form id="chat-form">
+                <input type="text" class="form-control" id="msg" placeholder="Type Message...">
+                <button class="btn btn-light" type="submit"><i class="bi bi-send-fill"></i> Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
