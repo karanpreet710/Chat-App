@@ -1,5 +1,5 @@
-$('.parent').show()
 $('.chat-container').hide()
+$('.parent').show()
 $('#join').click(() => {
     const socket = io()
     const username = $('#username').val()
