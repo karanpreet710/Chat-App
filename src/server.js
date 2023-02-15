@@ -8,7 +8,6 @@ const { userJoin, getCurrentUser, userLeave, getRoomUsers } = require('./utils/u
 const PORT = process.env.PORT || 3333
 
 const server = http.createServer(app)
-
 const io = socketio(server)
 
 app.use('/', express.static(__dirname + '/public'))
